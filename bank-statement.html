@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Bank statement</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="icon" href="./images/favi2.png">
+
+    <style>
+        .sidebar {
+            background-color: #ffffff;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar-header {
+            margin-bottom: 20px;
+        }
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-menu li {
+            margin-bottom: 15px;
+        }
+        .sidebar-menu li a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .sidebar-menu li a:hover {
+            background-color: #f0f0f0;
+        }
+        .main-content {
+            padding: 20px;
+            width: calc(100% - 260px); /* Adjust for sidebar width */
+        }
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .footer-box {
+            margin-top: 40px;
+        }
+        .footer-box{
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+   <!-- Start header -->
+   <header class="top-header">
+    <div class="header_top">
+        
+        <div class="container">
+            <div class="row">
+                <div class="logo_section" >
+                    <center>
+                    <img src="./images/h2.png" width="400px" alt="image">
+                    </center>
+                </div>
+                <div class="site_information" style="margin-top: 30px;">
+                    <ul>
+                        <li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />icicibank@gmail.com</a></li>
+                        <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+91 71235 69847</a></li>
+                        <li><a class="join_bt" href="login.html">Login us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="col-sm-12">
+                    <div class="menu_orange_section" style="background: #ff880e;">
+                        <nav class="navbar header-nav navbar-expand-lg"> 
+                            <div class="menu_section">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                                    <ul class="navbar-nav">
+                                        <li><a class="nav-link active" href="index.html">Home</a></li>
+                                        <li><a class="nav-link active" href="login.html">Login</a></li>
+                                        <li><a class="nav-link" href="register.html">Register</a></li>
+                                        <li><a class="nav-link" href="about.html">About</a></li>
+                                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                                        <li><a class="nav-link" href="index.html">Log Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start Banner -->
+    <div class="section inner_page_banner" style="background-color: lightslategrey;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner_title">
+                        <h3><img src="./images/sta1.png" height="50px" width="50px"> Bank statement</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Sidebar and Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Start Sidebar -->
+            <aside class="sidebar col-md-3">
+                <div class="sidebar-header">
+                    <!-- Sidebar header -->
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="deposit.html">Deposit</a></li>
+                    <li><a href="loan.html">Loan</a></li>
+                    <li><a href="money-transfer.html">Money Transfer</a></li>
+                </ul>
+            </aside>
+            <!-- End Sidebar -->
+
+            <!-- Start Main Content -->
+            <div class="main-content col-md-9" >
+                <div class="form-container" style="background-color:lightsteelblue;">
+                    <h2>Bank Statement Request Form</h2>
+                    <form id="statement-form" >
+                        <div class="form-group">
+                            <label for="accountNumber">Account Number:</label>
+                            <input type="text" id="accountNumber" name="accountNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="startDate">Start Date:</label>
+                            <input type="date" id="startDate" name="startDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="endDate">End Date:</label>
+                            <input type="date" id="endDate" name="endDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <button type="submit">Request Statement</button>
+                    </form>
+                </div>
+            </div>
+            <!-- End Main Content -->
+        </div>
+    </div>
+
+
+
+    <div class="footer_bottom" style=" background-color:  #ff880e; margin-top: 300px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">@ Copyrights 2024 icicibank by Hamjath</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        document.getElementById('statement-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Retrieve form data
+            const accountNumber = document.getElementById('accountNumber').value;
+            const startDate = document.getElementById('startDate').value;
+            const endDate = document.getElementById('endDate').value;
+            const email = document.getElementById('email').value;
+
+            // Confirmation alert
+            if (confirm('Are you sure you want to generate and download the PDF?')) {
+                // Create a PDF using jsPDF
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+
+                // Add text to PDF
+                doc.text('Bank Statement Request', 10, 10);
+                doc.text(`Account Number: ${accountNumber}`, 10, 20);
+                doc.text(`Start Date: ${startDate}`, 10, 30);
+                doc.text(`End Date: ${endDate}`, 10, 40);
+                doc.text(`Email: ${email}`, 10, 50);
+
+                // Save the PDF
+                doc.save('Bank_Statement_Request.pdf');
+            }
+        });
+    </script>
+
+</body>
+</html>

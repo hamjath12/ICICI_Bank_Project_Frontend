@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Money-Transfer</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="icon" href="./images/favi2.png">
+
+    <style>
+        /* Sidebar styles */
+        
+        .sidebar {
+            background-color: #ffffff;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-header {
+            margin-bottom: 20px;
+        }
+
+        .sidebar-header h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-menu li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar-menu li a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar-menu li a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Main content styles */
+        .main-content {
+            padding: 20px;
+        }
+
+        .content {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .money-transfer {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .money-transfer h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+    </style>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <div class="header_top">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="logo_section" >
+                        <center>
+                        <img src="./images/h2.png" width="400px" alt="image">
+                        </center>
+                    </div>
+                    <div class="site_information" style="margin-top: 30px;">
+                        <ul>
+                            <li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />icicibank@gmail.com</a></li>
+                            <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+91 71235 69847</a></li>
+                            <li><a class="join_bt" href="login.html">Login us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="header_bottom">
+          <div class="container">
+            <div class="col-sm-12">
+                <div class="menu_orange_section" style="background: #ff880e;">
+                   <nav class="navbar header-nav navbar-expand-lg"> 
+                     <div class="menu_section">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="index.html">Home</a></li>
+                        <li><a class="nav-link active" href="login.html">Login</a></li>
+                        <li><a class="nav-link" href="register.html">Register</a></li>
+                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="nav-link" href="index.html">Log Out</a></li> </ul>
+                </div>
+                     </div>
+                 </nav>
+                
+                </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start Banner -->
+    <div class="section inner_page_banner" style="background-color: lightslategrey;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner_title">
+                        <h3><img src="./images/mt.png" height="60px" width="60px"> Money-Transfer</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Sidebar and Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Start Sidebar -->
+            <aside class="sidebar col-md-3">
+                <ul class="sidebar-menu">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="bank-statement.html">Bank Statement</a></li>
+                    <li><a href="deposit.html">Deposit</a></li>
+                    <li><a href="loan.html">Loan</a></li>
+                </ul>
+            </aside>
+            <!-- End Sidebar -->
+
+            <!-- Start Main Content -->
+            <div class="main-content col-md-9" style="text-align: center; margin-top: 50px;">
+                <div class="money-transfer" style="background-color:lightsteelblue;">
+                    <h2>Bank Money Transfer</h2>
+                    <form id="transfer-form">
+                        <div class="form-group">
+                            <label for="account-number">To Account Number:</label>
+                            <input type="text" id="account-number" name="account-number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bank-name">Bank Name:</label>
+                            <input type="text" id="bank-name" name="bank-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ifsc-code">IFSC Code:</label>
+                            <input type="text" id="ifsc-code" name="ifsc-code" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State:</label>
+                            <input type="text" id="state" name="state" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Amount:</label>
+                            <input type="number" id="amount" name="amount" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </form>
+                </div>
+            </div>
+            <!-- End Main Content -->
+        </div>
+    </div>
+    <!-- End Sidebar and Main Content -->
+
+    <!-- Start Footer -->
+    <div class="footer_bottom" style=" background-color:  #ff880e; margin-top: 300px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">@ Copyrights 2024 icicibank by Hamjath</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- JavaScript for form submission -->
+    <script>
+        document.getElementById('transfer-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the default way
+            
+            // Get form data
+            const accountNumber = document.getElementById('account-number').value;
+            const bankName = document.getElementById('bank-name').value;
+            const ifscCode = document.getElementById('ifsc-code').value;
+            const state = document.getElementById('state').value;
+            const amount = document.getElementById('amount').value;
+            
+            // Perform form validation (basic example)
+            if (accountNumber && bankName && ifscCode && state && amount) {
+                // Show success alert
+                alert(`Successfully sent ${amount} to account number ${accountNumber} at ${bankName} with IFSC code ${ifscCode}.`);
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+
+</html>

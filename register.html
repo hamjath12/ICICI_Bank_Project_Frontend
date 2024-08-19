@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Register</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="icon" href="./images/favi2.png">
+    <style>
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh; /* Adjust height as needed */
+            padding: 20px;
+        }
+
+        .register-form {
+            background-color: lightslategrey;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+
+        .register-form h1 {
+            margin: 0 0 20px;
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+        }
+
+        .register-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .register-form input, .register-form select, .register-form textarea {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .register-form .error {
+            color: red;
+            font-size: 14px;
+            display: block;
+            margin-top: -15px;
+            margin-bottom: 15px;
+        }
+
+        .register-form button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .register-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <div class="header_top">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="logo_section" >
+                        <center>
+                        <img src="./images/h2.png" width="400px" alt="image">
+                        </center>
+                    </div>
+                    <div class="site_information" style="margin-top: 30px;">
+                        <ul>
+                            <li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />icicibank@gmail.com</a></li>
+                            <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+91 71235 69847</a></li>
+                            <li><a class="join_bt" href="login.html">Login us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="col-sm-12">
+                    <div class="menu_orange_section" style="background: #ff880e;">
+                        <nav class="navbar header-nav navbar-expand-lg"> 
+                            <div class="menu_section">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                                    <ul class="navbar-nav">
+                                        <li><a class="nav-link active" href="index.html">Home</a></li>
+                                        <li><a class="nav-link" href="login.html">Login</a></li>
+                                        <li><a class="nav-link" href="about.html">About</a></li>
+                                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                                        <li><a class="nav-link" href="index.html">Log Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="search-box">
+                            <input type="text" class="search-txt" placeholder="Search">
+                            <a class="search-btn">
+                                <img src="images/search_icon.png" alt="#" />
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start Banner -->
+    <div class="section inner_page_banner" style=" background-color: lightslategrey;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner_title">
+                        <h3><img src="./images/reg.png" height="50px" width="50px"> Register</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start Registration Form -->
+    <div class="form-container" >
+        <form class="register-form" onsubmit="return register_submit();">
+            <h1>Bank Registration</h1>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <span id="name_error" class="error" style="color: red;"></span>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+            <span id="age_error" class="error" style="color: red;"></span>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <span id="gender_error" class="error" style="color: red;"></span>
+
+            <label for="account_number">Account Number</label>
+            <input type="text" id="account_number" name="account_number" required>
+            <span id="account_number_error" class="error" style="color: red;"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <span id="password_error" class="error" style="color: red;"></span>
+
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            <span id="confirm_password_error" class="error" style="color: red;"></span>
+
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" name="phone" required>
+            <span id="phone_error" class="error" style="color: red;"></span>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+            <span id="address_error" class="error"></span>
+
+            <label for="district">District</label>
+            <input type="text" id="district" name="district" required>
+            <span id="district_error" class="error" style="color: red;"></span>
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" required>
+            <span id="state_error" class="error" style="color: red;"></span>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required>
+            <span id="country_error" class="error" style="color: red;"></span>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <!-- End Registration Form -->
+
+    <!-- Start Footer -->
+    <footer class="footer-box" style="background-color: lightslategrey; margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-12 white_fonts">
+                    <div class="row">
+                        <!-- <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <img class="img-responsive" src="images/h2.png" alt="#" />
+                            </div>
+                        </div> -->
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <h3><img src="./images/sta1.png" height="50px" width="50px"> Page Links</h3>
+                            </div>
+                            <div class="full">
+                                <ul class="menu_footer">
+                                    <li><a href="index.html">> Home</a></li>
+                                    <li><a href="about.html">> About</a></li>
+                                    <li><a href="login.html">> Login</li>
+                                    <li><a href="register.html">> Register</a></li>
+                                    <li><a href="contact.html">> Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <div class="footer_blog full white_fonts">
+                             
+                         </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <div class="footer_blog full white_fonts">
+                                <h3><img src="./images/phone1.jpg" height="50px" width="50px"> Contact us</h3>
+                                <ul class="full">
+                               <li><img src="images/i5.png"><span>India 145<br>All state Branch</span></li>
+                               <li><img src="images/i6.png"><span>icicibank@gmail.com</span></li>
+                               <li><img src="images/i7.png"><span>+91 71235 69847</span></li>
+                             </ul>
+                         </div>
+                            </div>
+                        </div>
+					</div>
+                </div>
+			 </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom" style="background-color:  #ff880e;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">@ Copyrights 2024 icicibank by Hamjath</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Custom JavaScript for Registration Form -->
+    <script>
+        function register_submit() {
+            var name = document.getElementById('name').value;
+            var age = document.getElementById('age').value;
+            var gender = document.getElementById('gender').value;
+            var account_number = document.getElementById('account_number').value;
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+            var phone = document.getElementById('phone').value;
+            var address = document.getElementById('address').value;
+            var district = document.getElementById('district').value;
+            var state = document.getElementById('state').value;
+            var country = document.getElementById('country').value;
+            
+            var isValid = true;
+
+            // Clear previous error messages
+            var errorElements = document.getElementsByClassName('error');
+            for (var i = 0; i < errorElements.length; i++) {
+                errorElements[i].innerHTML = "";
+            }
+
+            if (name == "") {
+                document.getElementById('name_error').innerHTML = "Enter name";
+                isValid = false;
+            }
+            if (age === "" || isNaN(age) || age < 18) {
+                document.getElementById('age_error').innerHTML = "Enter a valid age (18 or older)";
+                isValid = false;
+            }
+            if (gender === "") {
+                document.getElementById('gender_error').innerHTML = "Select gender";
+                isValid = false;
+            }
+            if (account_number === "") {
+                document.getElementById('account_number_error').innerHTML = "Enter account number";
+                isValid = false;
+            }
+            if (password === "") {
+                document.getElementById('password_error').innerHTML = "Enter password";
+                isValid = false;
+            }
+            if (confirm_password !== password) {
+                document.getElementById('confirm_password_error').innerHTML = "Passwords do not match";
+                isValid = false;
+            }
+            if (phone === "") {
+                document.getElementById('phone_error').innerHTML = "Enter phone number";
+                isValid = false;
+            }
+            if (address === "") {
+                document.getElementById('address_error').innerHTML = "Enter address";
+                isValid = false;
+            }
+            if (district === "") {
+                document.getElementById('district_error').innerHTML = "Enter district";
+                isValid = false;
+            }
+            if (state === "") {
+                document.getElementById('state_error').innerHTML = "Enter state";
+                isValid = false;
+            }
+            if (country === "") {
+                document.getElementById('country_error').innerHTML = "Enter country";
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert("Registration successful");
+                window.location.href = "dashboard.html"; // Change this to your actual dashboard path
+                return false; // Prevent form submission
+            }
+
+            return false; // Prevent form submission if validation fails
+        }
+    </script>
+</body>
+</html>

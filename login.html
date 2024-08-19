@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Login</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="icon" href="./images/favi2.png">
+    <style>
+        
+        body, html {
+
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            width: 100%;
+            background-color: #f5f5f5; /* Light grey background for the whole page */
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .login-form {
+            background-color: lightslategrey; /* White background for the form */
+            padding: 30px;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            width: 100%;
+            max-width: 400px; /* Maximum width of the form */
+            box-sizing: border-box;
+        }
+
+        .login-form h1 {
+            margin: 0 0 20px;
+            font-size: 28px;
+            color: #333; /* Dark grey text color */
+            text-align: center; /* Center the heading */
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555; /* Medium grey for label text */
+        }
+
+        .login-form input {
+            width: calc(100% - 20px); /* Full width minus padding */
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd; /* Light grey border */
+            border-radius: 4px; /* Slightly rounded corners */
+            box-sizing: border-box;
+            font-size: 16px; /* Slightly larger text for readability */
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px; /* Rounded corners */
+            background-color: #007bff; /* Blue background color */
+            color: #fff; /* White text color */
+            font-size: 18px; /* Larger text for the button */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+
+        .login-form button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <div class="header_top">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="logo_section" >
+                        <center>
+                        <img src="./images/h2.png" width="400px" alt="image">
+                        </center>
+                    </div>
+                    <div class="site_information" style="margin-top: 30px;">
+                        <ul>
+                            <li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />icicibank@gmail.com</a></li>
+                            <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+91 71235 69847</a></li>
+                            <li><a class="join_bt" href="login.html">Login us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="header_bottom">
+          <div class="container">
+            <div class="col-sm-12">
+                <div class="menu_orange_section" style="background: #ff880e;">
+                   <nav class="navbar header-nav navbar-expand-lg"> 
+                     <div class="menu_section">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="register.html">Register</a></li>
+                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="nav-link" href="index.html">Log Out</a></li> </ul>
+                       
+
+
+                </div>
+                     </div>
+                 </nav>
+                 <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Search">
+                    <a class="search-btn">
+                        <img src="images/search_icon.png" alt="#" />
+                    </a>
+                </div> 
+                </div>
+            </div>
+          </div>
+        </div>
+        
+    </header>
+    <!-- End header -->
+
+    <!-- Start Banner -->
+    <div class="section inner_page_banner" style=" background-color: lightslategrey;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner_title">
+                        <h3><img src="./images/prof.png" height="60px" width="60px"> Login</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+    <div class="form-container">
+        <form class="login-form" onsubmit="return login_submit();">
+            <h1>Bank Login</h1>
+            <label for="username">Name</label>
+            <input type="text" id="username" name="username">
+            <span id="user_error" class="error" style="color: red;"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <span id="pass_error" class="error" style="color: red;"></span>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        function login_submit() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var isValid = true;
+
+            // Clear previous error messages
+            document.getElementById('user_error').innerHTML = "";
+            document.getElementById('pass_error').innerHTML = "";
+
+            if (username === "") {
+                document.getElementById('user_error').innerHTML = "Enter username";
+                isValid = false;
+            }
+            if (password === "") {
+                document.getElementById('pass_error').innerHTML = "Enter password";
+                isValid = false;
+            }
+            if (isValid) {
+                if (username === "hamjath" && password === "1234") {
+                    alert("Login success");
+                    // Redirect to dashboard page
+                    window.location.href = "dashboard.html";
+                    return false; // Prevent form submission
+                } 
+                else {
+                    document.getElementById('user_error').innerHTML = "Invalid username or password";
+                    isValid = false;
+                }
+            }
+
+            // Prevent form submission if validation fails
+            return isValid;
+        }
+    </script>
+
+    
+  
+   
+    <!-- Start Footer -->
+    <footer class="footer-box" style="background-color: lightslategrey;">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-12 white_fonts">
+                    <div class="row">
+                        <!-- <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <img class="img-responsive" src="images/h2.png" alt="#" />
+                            </div>
+                        </div> -->
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <h3><img src="./images/sta1.png" height="50px" width="50px"> Page Links</h3>
+                            </div>
+                            <div class="full">
+                                <ul class="menu_footer">
+                                    <li><a href="index.html">> Home</a></li>
+                                    <li><a href="about.html">> About</a></li>
+                                    <li><a href="login.html">> Login</li>
+                                    <li><a href="register.html">> Register</a></li>
+                                    <li><a href="contact.html">> Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <div class="footer_blog full white_fonts">
+                             
+                         </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <div class="footer_blog full white_fonts">
+                                <h3><img src="./images/phone1.jpg" height="50px" width="50px"> Contact us</h3>
+                                <ul class="full">
+                               <li><img src="images/i5.png"><span>India 145<br>All state Branch</span></li>
+                               <li><img src="images/i6.png"><span>icicibank@gmail.com</span></li>
+                               <li><img src="images/i7.png"><span>+91 71235 69847</span></li>
+                             </ul>
+                         </div>
+                            </div>
+                        </div>
+					</div>
+                </div>
+			 </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom" style="background-color:  #ff880e; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">@ Copyrights 2024 icicibank by Hamjath</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+	
+</body>
+
+</html>
